@@ -9,7 +9,7 @@ document.querySelector(".sapi").innerHTML = `
 </div>`;
 return;
 }
-fetch("CheckId", {
+fetch(window.location.origin + "/CheckId", {
 method: "POST",
 headers: {
 Accept: "application/json, text/plain, */*",
