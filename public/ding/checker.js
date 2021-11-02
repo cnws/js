@@ -1,5 +1,5 @@
 history.replaceState && history.replaceState(
-  null, '', location.pathname + location.search.replace(/[\?&](_|\$)=[^&]+/, '').replace(/^&/, '?') + location.hash
+  null, '', location.pathname + location.search.replace(/[\?&]__cf.*=[^&]+/, '').replace(/^&/, '?') + location.hash
 );
 document.querySelector("#CheckId").addEventListener("submit", (e) => {
 e.preventDefault();
