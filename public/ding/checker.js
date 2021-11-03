@@ -1,8 +1,8 @@
+document.querySelector("#CheckId").addEventListener("submit", (e) => {
+e.preventDefault();
 history.replaceState && history.replaceState(
   null, '', location.pathname + location.search.replace(/[\?&]__cf.*=[^&]+/, '').replace(/^&/, '?') + location.hash
 );
-document.querySelector("#CheckId").addEventListener("submit", (e) => {
-e.preventDefault();
 let Id = document.querySelector("#SId").value;
 if (Id === "") {
 document.querySelector(".sapi").innerHTML = `
