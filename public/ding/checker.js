@@ -22,6 +22,7 @@ body: JSON.stringify({
 Id,
 }),
 })
+.then((data) => console.log(data))
 .then((res) => res.json())
 //.then((data) => console.log(data))
 .then((ret) => {
