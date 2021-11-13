@@ -31,7 +31,7 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     //.then((res) => res.json())
     //.then((data) => console.log(data))
     .then((res) => {
-      if (error.status !== 200) {
+      if (res.status !== 200) {
         document.querySelector(".sapi").innerHTML = `
 <div class="alert alert-danger alert-dismissable">
 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
