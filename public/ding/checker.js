@@ -28,18 +28,9 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     }),
   })
     //.then((data) => console.log(data))
-    //.then((res) => res.json())
+    .then((res) => res.json())
     //.then((data) => console.log(data))
     .then((res) => {
-      if (res.status !== 200) {
-        document.querySelector(".sapi").innerHTML = `
-<div class="alert alert-danger alert-dismissable">
-<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-错误：<strong>访问超时，请重新刷新该页面！ </strong>
-</div>`;
-        return;
-      }
-      let ret = res.json();
       $("#SId").val("");
       if (ret.Data.ErrMsg !== null) {
         document.querySelector(".sapi").innerHTML = `
