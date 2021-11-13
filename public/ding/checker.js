@@ -32,7 +32,7 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     //.then((data) => console.log(data))
     .then((res) => {
       if (error.status !== 200) {
-        ocument.querySelector(".sapi").innerHTML = `
+        document.querySelector(".sapi").innerHTML = `
 <div class="alert alert-danger alert-dismissable">
 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 错误：<strong>访问超时，请重新刷新该页面！ </strong>
@@ -79,7 +79,7 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     //.catch((err) => console.log(err));
     .catch(function (error) {
       if (error.status !== 200) {
-        ocument.querySelector(".sapi").innerHTML = `
+        document.querySelector(".sapi").innerHTML = `
 <div class="alert alert-danger alert-dismissable">
 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
 错误：<strong>访问超时，请重新刷新该页面！ </strong>
