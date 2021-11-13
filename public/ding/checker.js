@@ -30,7 +30,7 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     //.then((data) => console.log(data))
     .then((res) => res.json())
     //.then((data) => console.log(data))
-    .then((res) => {
+    .then((ret) => {
       $("#SId").val("");
       if (ret.Data.ErrMsg !== null) {
         document.querySelector(".sapi").innerHTML = `
