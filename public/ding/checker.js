@@ -32,7 +32,7 @@ document.querySelector("#CheckId").addEventListener("submit", (e) => {
     //.then((data) => console.log(data))
     .then((ret) => {
       $("#SId").val("");
-      if (ret.Data.ErrMsg !== null) {
+      if (ret.Data.ErrMsg !== undefined && ret.Data.ErrMsg !== null) {
         document.querySelector(".sapi").innerHTML = `
 <div class="alert alert-danger alert-dismissable text-center">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
